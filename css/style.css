@@ -1,0 +1,16 @@
+.row{
+  background-color: rgba(30,144,255,0.9);
+  border-radius: 6px;
+}
+
+.pizza-ordering{
+  color: whitesmoke;
+}
+
+.pizza-sizes{
+  color: whitesmoke;
+}
+
+.pizza-types{
+  color: whitesmoke;
+}
