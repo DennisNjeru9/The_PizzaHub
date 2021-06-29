@@ -1,16 +1,18 @@
 .row{
   background-color: rgba(30,144,255,0.9);
   border-radius: 6px;
+  padding-top: 20px;
 }
 
-.pizza-ordering{
-  color: whitesmoke;
+#pizza-attributes{
+  margin-top: 30px;
 }
 
-.pizza-sizes{
-  color: whitesmoke;
+#delivery-section{
+  margin-top:30px; 
 }
 
-.pizza-types{
-  color: whitesmoke;
+#welcome{
+  width: 100%;
 }
+
