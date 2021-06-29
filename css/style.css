@@ -16,3 +16,10 @@
   width: 100%;
 }
 
+.checkout-message{
+  height: 50px;
+  background-color: red;
+  font-size: xx-large;
+  font-weight: 700;
+  color: green;
+}
