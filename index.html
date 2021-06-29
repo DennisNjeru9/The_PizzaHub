@@ -60,13 +60,13 @@
           <form>
             <div class="form-floating mb-3">
               <select class="form-select" aria-label="Default select example">
-                <option selected>Price</option>
+                <option selected id="s-price">Price</option>
                 <option value="1">500</option>
               </select>
             </div>
             <div class="form-floating mb-3">
               <select class="form-select" aria-label="Default select example">
-                <option selected>Pizza Crust</option>
+                <option selected id="s-crust">Pizza Crust</option>
                 <option value="1">Crispy</option>
                 <option value="2">Stuffed</option>
                 <option value="3">Gluten-free</option>
@@ -74,7 +74,7 @@
             </div>
             <div class="form-floating mb-3">
               <select class="form-select" aria-label="Default select example">
-                <option selected>Topping</option>
+                <option selected id="s-topping">Topping</option>
                 <option value="1">Pepperoni</option>
                 <option value="2">Mushroom</option>
                 <option value="3">Green Pepper</option>
@@ -89,7 +89,7 @@
             </div>
             <div class="form-floating mb-3">
               <select class="form-select" aria-label="Default select example">
-                <option selected>Quantity</option>
+                <option selected id="s-quantity">Quantity</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -109,13 +109,13 @@
           <form>
             <div class="form-floating mb-3">
               <select class="form-select" aria-label="Default select example">
-                <option selected>Price</option>
+                <option selected id="m-price">Price</option>
                 <option value="1">800</option>
               </select>
             </div>
             <div class="form-floating mb-3">
               <select class="form-select" aria-label="Default select example">
-                <option selected>Pizza Crust</option>
+                <option selected id="m-crust">Pizza Crust</option>
                 <option value="1">Crispy</option>
                 <option value="2">Stuffed</option>
                 <option value="3">Gluten-free</option>
@@ -123,7 +123,7 @@
             </div>
             <div class="form-floating mb-3">
               <select class="form-select" aria-label="Default select example">
-                <option selected>Topping</option>
+                <option selected id="m-topping">Topping</option>
                 <option value="1">Pepperoni</option>
                 <option value="2">Mushroom</option>
                 <option value="3">Green Pepper</option>
@@ -138,7 +138,7 @@
             </div>
             <div class="form-floating mb-3">
               <select class="form-select" aria-label="Default select example">
-                <option selected>Quantity</option>
+                <option selected id="m-quantity">Quantity</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -158,13 +158,13 @@
           <form>
             <div class="form-floating mb-3">
               <select class="form-select" aria-label="Default select example">
-                <option selected>Price</option>
+                <option selected id="l-price">Price</option>
                 <option value="1">1300</option>
               </select>
             </div>
             <div class="form-floating mb-3">
               <select class="form-select" aria-label="Default select example">
-                <option selected>Pizza Crust</option>
+                <option selected id="l-crust">Pizza Crust</option>
                 <option value="1">Crispy</option>
                 <option value="2">Stuffed</option>
                 <option value="3">Gluten-free</option>
@@ -172,7 +172,7 @@
             </div>
             <div class="form-floating mb-3">
               <select class="form-select" aria-label="Default select example">
-                <option selected>Topping</option>
+                <option selected id="l-topping">Topping</option>
                 <option value="1">Pepperoni</option>
                 <option value="2">Mushroom</option>
                 <option value="3">Green Pepper</option>
@@ -187,7 +187,7 @@
             </div>
             <div class="form-floating mb-3">
               <select class="form-select" aria-label="Default select example">
-                <option selected>Quantity</option>
+                <option selected id="l-quantity">Quantity</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -208,6 +208,7 @@
     <div class="container-fluid" id="delivery-section">
       <div class="row">
         <div class="col">
+          <h5>Delivery Option</h5>
           <div class="form-check">
             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
             <label class="form-check-label" for="flexCheckDefault">
@@ -224,7 +225,7 @@
         <div class="col">
           <div class="form-floating mb-3">
             <select class="form-select" aria-label="Default select example">
-              <option selected>Select Location</option>
+              <option selected id="location">Select Location</option>
               <option value="1">Within CBD</option>
               <option value="2">Outside CBD</option>
             </select>
@@ -246,7 +247,7 @@
       <a href="mailto:dennis@pizzahub.com">dennis@pizzahub.com</a>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.6.0.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/script.js"></script>
   </body>

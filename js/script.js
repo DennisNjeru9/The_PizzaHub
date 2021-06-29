@@ -1,1 +1,2 @@
 
+var smallPizza = new Pizza
