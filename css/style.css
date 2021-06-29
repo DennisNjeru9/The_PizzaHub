@@ -6,6 +6,7 @@ body{
   background-color: rgba(30,144,255,0.9);
   border-radius: 6px;
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 #pizza-attributes{
