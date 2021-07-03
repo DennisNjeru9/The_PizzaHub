@@ -133,34 +133,30 @@
       </table>
     </div>
 
-    <div class="container" id="delivery-section">
+    <div class="container" id="location">
       <div class="row">
         <div class="col">
           <h5>Delivery Option</h5>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              To pick myself
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="pick">
+            <label class="form-check-label" for="flexRadioDefault1">
+              To pick
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-            <label class="form-check-label" for="flexCheckChecked">
-              Deliver
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="toDeliver" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              To deliver
             </label>
           </div>
         </div>
         <div class="col">
           <div class="form-floating mb-3">
-            <select class="form-select" aria-label="Default select example">
-              <option selected id="location">Select Location</option>
-              <option value="1">Within CBD</option>
-              <option value="2">Outside CBD</option>
-            </select>
+            <input type="text" name="location" id="delivery" placeholder="location">
           </div>
         </div>
         <div class="d-grid gap-2 col-4 mx-auto">
-          <button type="button" class="btn btn-dark btn-lg">Checkout</button>
+          <button type="button" class="btn btn-dark btn-lg" id="checkout">Checkout</button>
         </div>
       </div>
     </div>

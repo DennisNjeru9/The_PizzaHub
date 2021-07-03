@@ -56,7 +56,26 @@ $(document).ready(function(){
 
     var totalPrice = total * quantity;
 
+    var pizzaOrder = new Pizza(pizzaType, pizzaSize, pizzaCrust, toppingArr.join(","));
+
     $("#table-order").show();
+    $("#location").show();
+    $("#table-content").append('<tr><td id="pizza-type">'+pizzaOrder.type +'</td><td id="pizza-crust">' + pizzaOrder.crust + '</td><td id="pizza-toppings">'+pizzaOrder.toppings + '</td><td id="pizza-quantity">'+quantity+'</td><td id="pizza-price">'+totalPrice+'</td></tr>');
+
+    $("button#checkout").click(function(){
+      var isChecked = $("#toDeliver").is(':checked');
+      var location = $("#delivery").val();
+
+      if(isChecked && location !== ""){
+        var totalAmount = totalPrice + 200;
+        alert("Your delivery fee is Ksh. 200 and the total cost is"+" "+totalAmount);
+      } else{
+        alert("Please enter your location");
+      }
+    });
+
+    
+    
 
     console.log(toppingArr.join(","))
     console.log(pizzaType);
