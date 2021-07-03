@@ -53,126 +53,87 @@
       </div>
     </div>
 
-    <div class="container-fluid" id="pizza-attributes">
+    <div class="container w-25" id="pizza-attributes">
       <div class="row">
         <div class="col">
-          <h3>Small Pizza</h3>
+          <h3>Pizza</h3>
           <form>
             <div class="form-floating mb-3">
               <select class="form-select" aria-label="Default select example">
-                <option selected id="s-price">Price</option>
-                <option value="1">500</option>
+                <option selected>Pizza Type</option>
+                <option value="pepperoni">Pepperoni</option>
+                <option value="chicken-tikka">Chicken Tikka</option>
+                <option value="hawaiian">Hawaiian</option>
+                <option value="bbq">BBQ</option>
+                <option value="veggie">Veggie</option>
               </select>
             </div>
             <div class="form-floating mb-3">
               <select class="form-select" aria-label="Default select example">
-                <option selected id="s-crust">Pizza Crust</option>
-                <option value="1">Crispy</option>
-                <option value="2">Stuffed</option>
-                <option value="3">Gluten-free</option>
+                <option selected>Pizza Size</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
               </select>
             </div>
             <div class="form-floating mb-3">
               <select class="form-select" aria-label="Default select example">
-                <option selected id="s-topping">Topping</option>
-                <option value="1">Pepperoni</option>
-                <option value="2">Mushroom</option>
-                <option value="3">Green Pepper</option>
-                <option value="4">Fresh Garlic</option>
-                <option value="5">Tomato</option>
-                <option value="6">Black Olives</option>
-                <option value="7">Sausage</option>
-                <option value="8">Onions</option>
-                <option value="9">Fresh Basil</option>
-                <option value="9">Extra Cheese</option>
+                <option selected>Pizza Crust</option>
+                <option value="crispy">Crispy</option>
+                <option value="stuffed">Stuffed</option>
+                <option value="gluten-free">Gluten-free</option>
               </select>
+            </div>
+            <div>
+              <h5>Pizza Toppings</h5>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="toppings" id="inlineCheckbox1" value="onions">
+                <label class="form-check-label" for="inlineCheckbox1">Onions</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="toppings" id="inlineCheckbox2" value="green-pepper">
+                <label class="form-check-label" for="inlineCheckbox2">Green Pepper</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="toppings" id="inlineCheckbox3" value="fresh-garlic">
+                <label class="form-check-label" for="inlineCheckbox3">Fresh Garlic</label>
+              </div>
             </div>
             <div class="form-floating mb-3">
               <input type="text" class="form-control" id="s-quantity" placeholder="Enter Pizza Quantity">
               <label for="s-quantity">Quantity</label>
             </div>
-          </form>
-        </div>
-        <div class="col">
-          <h3>Medium Pizza</h3>
-          <form>
-            <div class="form-floating mb-3">
-              <select class="form-select" aria-label="Default select example">
-                <option selected id="m-price">Price</option>
-                <option value="1">800</option>
-              </select>
-            </div>
-            <div class="form-floating mb-3">
-              <select class="form-select" aria-label="Default select example">
-                <option selected id="m-crust">Pizza Crust</option>
-                <option value="1">Crispy</option>
-                <option value="2">Stuffed</option>
-                <option value="3">Gluten-free</option>
-              </select>
-            </div>
-            <div class="form-floating mb-3">
-              <select class="form-select" aria-label="Default select example">
-                <option selected id="m-topping">Topping</option>
-                <option value="1">Pepperoni</option>
-                <option value="2">Mushroom</option>
-                <option value="3">Green Pepper</option>
-                <option value="4">Fresh Garlic</option>
-                <option value="5">Tomato</option>
-                <option value="6">Black Olives</option>
-                <option value="7">Sausage</option>
-                <option value="8">Onions</option>
-                <option value="9">Fresh Basil</option>
-                <option value="9">Extra Cheese</option>
-              </select>
-            </div>
-            <div class="form-floating mb-3">
-              <input type="text" class="form-control" id="m-quantity" placeholder="Enter Pizza Quantity">
-              <label for="m-quantity">Quantity</label>
-            </div>
-          </form>
-        </div>
-        <div class="col">
-          <h3>Large Pizza</h3>
-          <form>
-            <div class="form-floating mb-3">
-              <select class="form-select" aria-label="Default select example">
-                <option selected id="l-price">Price</option>
-                <option value="1">1300</option>
-              </select>
-            </div>
-            <div class="form-floating mb-3">
-              <select class="form-select" aria-label="Default select example">
-                <option selected id="l-crust">Pizza Crust</option>
-                <option value="1">Crispy</option>
-                <option value="2">Stuffed</option>
-                <option value="3">Gluten-free</option>
-              </select>
-            </div>
-            <div class="form-floating mb-3">
-              <select class="form-select" aria-label="Default select example">
-                <option selected id="l-topping">Topping</option>
-                <option value="1">Pepperoni</option>
-                <option value="2">Mushroom</option>
-                <option value="3">Green Pepper</option>
-                <option value="4">Fresh Garlic</option>
-                <option value="5">Tomato</option>
-                <option value="6">Black Olives</option>
-                <option value="7">Sausage</option>
-                <option value="8">Onions</option>
-                <option value="9">Fresh Basil</option>
-                <option value="9">Extra Cheese</option>
-              </select>
-            </div>
-            <div class="form-floating mb-3">
-              <input type="text" class="form-control" id="l-quantity" placeholder="Enter Pizza Quantity">
-              <label for="l-quantity">Quantity</label>
-            </div>
+            <button type="submit" class="btn btn-dark">Submit Order</button>
           </form>
         </div>
       </div>
     </div>
 
-    <div class="container-fluid" id="delivery-section">
+
+    <div class="container" id="table-order">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Pizza Type</th>
+            <th scope="col">Crust</th>
+            <th scope="col">Topping</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Price</th>
+          </tr>
+        </thead>
+        <tbody id="table-content">
+          <tr>
+            <td id="pizza-type"></td>
+            <td id="pizza-crust"></td>
+            <td id="pizza-toppings"></td>
+            <td id="pizza-quantity"></td>
+            <td id="pizza-price"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="container" id="delivery-section">
       <div class="row">
         <div class="col">
           <h5>Delivery Option</h5>
@@ -199,14 +160,12 @@
           </div>
         </div>
         <div class="d-grid gap-2 col-4 mx-auto">
-          <button type="button" class="btn btn-success btn-lg">Checkout</button>
+          <button type="button" class="btn btn-dark btn-lg">Checkout</button>
         </div>
       </div>
     </div>
 
-    <div class="container-fluid">
-      <div class="checkout-message"><span id="checkout-message"></span></div>
-    </div>
+    
 
     <footer>
       <p>Copyright: PizzaHub</p>
