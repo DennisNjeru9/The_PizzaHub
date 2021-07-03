@@ -56,11 +56,17 @@ $(document).ready(function(){
 
     var totalPrice = total * quantity;
 
-    var pizzaOrder = new Pizza(pizzaType, pizzaSize, pizzaCrust, toppingArr.join(","));
+    if(pizzaType !== "Pizza Type" && pizzaSize !== "Pizza Size" && pizzaCrust !== "Pizza Crust" && toppingArr.length > 0 ){
+      var pizzaOrder = new Pizza(pizzaType, pizzaSize, pizzaCrust, toppingArr.join(","));
 
-    $("#table-order").show();
-    $("#location").show();
-    $("#table-content").append('<tr><td id="pizza-type">'+pizzaOrder.type +'</td><td id="pizza-crust">' + pizzaOrder.crust + '</td><td id="pizza-toppings">'+pizzaOrder.toppings + '</td><td id="pizza-quantity">'+quantity+'</td><td id="pizza-price">'+totalPrice+'</td></tr>');
+      $("#table-order").show();
+      $("#location").show();
+      $("#table-content").append('<tr><td id="pizza-type">'+pizzaOrder.type +'</td><td id="pizza-crust">' + pizzaOrder.crust + '</td><td id="pizza-toppings">'+pizzaOrder.toppings + '</td><td id="pizza-quantity">'+quantity+'</td><td id="pizza-price">'+totalPrice+'</td></tr>');
+      } else {
+        alert("Please select the corresponding pizza content");
+    }
+
+    
 
     $("button#checkout").click(function(){
       var isChecked = $("#toDeliver").is(':checked');
@@ -72,6 +78,7 @@ $(document).ready(function(){
       } else{
         alert("Please enter your location");
       }
+      $("#table-order").hide();
     });
 
     
@@ -91,6 +98,7 @@ $(document).ready(function(){
     $("#pizzaSize").val("Pizza Size");
     $("#pizzaCrust").val("Pizza Crust");
     $("#s-quantity").val(0);
+    event.preventDefault();
 
   });
   console.log(total);
