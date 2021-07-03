@@ -57,9 +57,9 @@
       <div class="row">
         <div class="col">
           <h3>Pizza</h3>
-          <form>
+          <form id="pizza-form">
             <div class="form-floating mb-3">
-              <select class="form-select" aria-label="Default select example">
+              <select class="form-select" aria-label="Default select example" id="pizzaType">
                 <option selected>Pizza Type</option>
                 <option value="pepperoni">Pepperoni</option>
                 <option value="chicken-tikka">Chicken Tikka</option>
@@ -69,7 +69,7 @@
               </select>
             </div>
             <div class="form-floating mb-3">
-              <select class="form-select" aria-label="Default select example">
+              <select class="form-select" aria-label="Default select example" id="pizzaSize">
                 <option selected>Pizza Size</option>
                 <option value="small">Small</option>
                 <option value="medium">Medium</option>
@@ -77,7 +77,7 @@
               </select>
             </div>
             <div class="form-floating mb-3">
-              <select class="form-select" aria-label="Default select example">
+              <select class="form-select" aria-label="Default select example" id="pizzaCrust">
                 <option selected>Pizza Crust</option>
                 <option value="crispy">Crispy</option>
                 <option value="stuffed">Stuffed</option>
@@ -87,20 +87,20 @@
             <div>
               <h5>Pizza Toppings</h5>
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" name="toppings" id="inlineCheckbox1" value="onions">
+                <input class="form-check-input" type="checkbox" name="toppings" id="onions" value="onions">
                 <label class="form-check-label" for="inlineCheckbox1">Onions</label>
               </div>
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" name="toppings" id="inlineCheckbox2" value="green-pepper">
+                <input class="form-check-input" type="checkbox" name="toppings" id="greenPepper" value="green-pepper">
                 <label class="form-check-label" for="inlineCheckbox2">Green Pepper</label>
               </div>
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" name="toppings" id="inlineCheckbox3" value="fresh-garlic">
+                <input class="form-check-input" type="checkbox" name="toppings" id="freshGarlic" value="fresh-garlic">
                 <label class="form-check-label" for="inlineCheckbox3">Fresh Garlic</label>
               </div>
             </div>
             <div class="form-floating mb-3">
-              <input type="text" class="form-control" id="s-quantity" placeholder="Enter Pizza Quantity">
+              <input type="number" class="form-control" id="s-quantity" placeholder="Enter Pizza Quantity">
               <label for="s-quantity">Quantity</label>
             </div>
             <button type="submit" class="btn btn-dark">Submit Order</button>
